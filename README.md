@@ -1,6 +1,6 @@
 # 欢迎
 
-```md
+```marko
 # 欢迎
 
 [English ](https://en.apis.alltick.co/)/ 中文
