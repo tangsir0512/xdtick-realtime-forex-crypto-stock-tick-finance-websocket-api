@@ -1,58 +1,61 @@
-> [English](./access_guide.md) | [中文](./access_guide_cn.md)
+# access\_guide
 
-# Integration Process
+> [English](access_guide.md) | [中文](access_guide_cn.md)
 
-### Step 1: Understand the access URLs and parameters required for the API by referring to the market address documentation.
+## Integration Process
 
-- [HTTP Market API Address Description](./http_interface/api_address_description.md)
-- [WebSocket Market API Address Description](./websocket_interface/api_address_description.md)
+#### Step 1: Understand the access URLs and parameters required for the API by referring to the market address documentation.
 
-### Step 2: Apply for your token.
+* [HTTP Market API Address Description](http_interface/api_address_description.md)
+* [WebSocket Market API Address Description](websocket_interface/api_address_description.md)
 
-- [Token Application](./token_application.md)
+#### Step 2: Apply for your token.
 
-### Step 3: Please refer to the interface restriction documentation to understand important considerations when making API calls to avoid being rejected.
+* [Token Application](token_application.md)
 
-- [HTTP Interface Restrictions](./http_interface/interface_limitation.md)
-- [WebSocket Interface Restrictions](./websocket_interface/interface_limitation.md)
-- [Error Code Description](./error_code_description.md)
+#### Step 3: Please refer to the interface restriction documentation to understand important considerations when making API calls to avoid being rejected.
 
-### Step 4: Please refer to the common standard headers documentation to understand the data format for requests and responses.
+* [HTTP Interface Restrictions](http_interface/interface_limitation.md)
+* [WebSocket Interface Restrictions](websocket_interface/interface_limitation.md)
+* [Error Code Description](error_code_description.md)
 
-- [HTTP Common Standard Headers](./http_interface/common_standard_header.md)
-- [WebSocket Common Standard Headers](./websocket_interface/common_standard_header.md)
+#### Step 4: Please refer to the common standard headers documentation to understand the data format for requests and responses.
 
-### Step 5: Please refer to the code list documentation to decide which product's market data you want.
+* [HTTP Common Standard Headers](http_interface/common_standard_header.md)
+* [WebSocket Common Standard Headers](websocket_interface/common_standard_header.md)
 
-- [Product Code List - A-share](./product_code_list_A_stock.md)
-- [Product Code List - Hong Kong Stock](./product_code_list_HK_stock.md)
-- [Product Code List - Cryptocurrency (Digital Currency)](./product_code_list_cryptocurrency.md)
-- [Product Code List - US Stock](./product_code_list_US_stock.md)
-- [Product Code List - Commodity (Precious Metals)](./product_code_list_commodities_gold.md)
-- [Product Code List - Forex](./product_code_list_forex.md)
+#### Step 5: Please refer to the code list documentation to decide which product's market data you want.
 
-### Step 6: Request specific APIs to obtain the desired data.
+* [Product Code List - A-share](product_code_list_a_stock.md)
+* [Product Code List - Hong Kong Stock](product_code_list_hk_stock.md)
+* [Product Code List - Cryptocurrency (Digital Currency)](product_code_list_cryptocurrency.md)
+* [Product Code List - US Stock](product_code_list_us_stock.md)
+* [Product Code List - Commodity (Precious Metals)](product_code_list_commodities_gold.md)
+* [Product Code List - Forex](product_code_list_forex.md)
 
-#### HTTP Interface
+#### Step 6: Request specific APIs to obtain the desired data.
 
-- [Get Latest Transaction Quote Query](./http_interface/latest_transaction_price_query.md)
-- [Get Latest Order Book Quote Query](./http_interface/latest_order_book_price_query.md)
-- [K-Line Query](./http_interface/kline_query.md)
-- [POST Query the latest 2 K lines of products in batches](./http_interface/batch_kline_query.md)
-- [Get basic information about stock products](./http_interface/static_query.md)
-- [Price changes, Market closure, Holidays, Limit up/down, New listings, and Delistings](./http_interface/price_changes_closure_holidays_delistings.md)
+**HTTP Interface**
 
-#### WebSocket Interface
+* [Get Latest Transaction Quote Query](http_interface/latest_transaction_price_query.md)
+* [Get Latest Order Book Quote Query](http_interface/latest_order_book_price_query.md)
+* [K-Line Query](http_interface/kline_query.md)
+* [POST Query the latest 2 K lines of products in batches](http_interface/batch_kline_query.md)
+* [Get basic information about stock products](http_interface/static_query.md)
+* [Price changes, Market closure, Holidays, Limit up/down, New listings, and Delistings](http_interface/price_changes_closure_holidays_delistings.md)
 
-- [Heartbeat](./websocket_interface/heartbeat.md)
-- [Transaction Quote Subscription](./websocket_interface/realtime_transaction_quote_subscription.md)
-- [Order Book Quote Subscription](./websocket_interface/realtime_order_book_quote_subscription.md)
-- [Cancel Quote Subscription](./websocket_interface/cancel_realtime_quote_subscription.md)
-- [K-line push (not supported)](./websocket_interface/k_line_push.md)
+**WebSocket Interface**
 
+* [Heartbeat](websocket_interface/heartbeat.md)
+* [Transaction Quote Subscription](websocket_interface/realtime_transaction_quote_subscription.md)
+* [Order Book Quote Subscription](websocket_interface/realtime_order_book_quote_subscription.md)
+* [Cancel Quote Subscription](websocket_interface/cancel_realtime_quote_subscription.md)
+* [K-line push (not supported)](websocket_interface/k_line_push.md)
 
-## Contact Us
+### Contact Us
+
 Email: support@alltick.co
 
-## Official website
+### Official website
+
 Official Website: [https://alltick.co](https://alltick.co/en-US)
