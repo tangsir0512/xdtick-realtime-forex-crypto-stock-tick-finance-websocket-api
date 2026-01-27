@@ -6,7 +6,7 @@
 
 ### 1. 频率类限制
 
-<table data-full-width="false"><thead><tr><th width="81">计划</th><th width="342.0001220703125">单独请求</th><th width="332">同时请求多个http接口</th></tr></thead><tbody><tr><td>免费</td><td><strong>/kline接口：</strong>每10秒，只能1次请求<br><strong>/batch-kline接口：</strong><mark style="color:red;">每10秒，可1次请求</mark><br><strong>/depth-tick接口：</strong>每10秒，只能请求1次<br><strong>/trade-tick接口：</strong>每10秒，只能请求1次<br><strong>/static_info接口：</strong>每10秒，只能1次请求<br><br><strong>/api/suspension/sse 接口</strong>：每1分钟只能1次请求<br><strong>/api/suspension/nyse接口</strong>：每1分钟只能1次请求<br><strong>/api/suspension/nasdaq接口</strong>：每1分钟只能1次请求</td><td>i3afNWxLfMxm</td></tr><tr><td>基础</td><td><strong>/kline接口：</strong>每1秒，只能1次请求<br><strong>/batch-kline接口：</strong><mark style="color:red;">每3秒，只能1次请求</mark><br><strong>/depth-tick接口：</strong>每1秒，只能1次请求<br><strong>/trade-tick接口：</strong>每1秒，只能1次请求<br><strong>/static_info接口：</strong>每1秒，只能1次请求<br><br><strong>/api/suspension/sse接口</strong>：每1分钟只能1次请求<br><strong>/api/suspension/nyse接口</strong>：每1分钟只能1次请求<br><strong>/api/suspension/nasdaq接口</strong>：每1分钟只能1次请求</td><td>O9Z4VgnBSp0R</td></tr><tr><td>高级</td><td><strong>/kline接口：</strong>每1秒，最大可10次请求<br><strong>/batch-kline接口：</strong><mark style="color:red;">每2秒，只能1次请求</mark><br><strong>/depth-tick接口：</strong>每1秒，最大10次请求<br><strong>/trade-tick接口：</strong>每1秒，最大10次请求<br><strong>/static_info接口：</strong>每1秒，最大可10次请求<br><br><strong>/api/suspension/sse接口</strong>：每1分钟只能1次请求<br><strong>/api/suspension/nyse接口</strong>：每1分钟只能1次请求<br><strong>/api/suspension/nasdaq接口</strong>：每1分钟只能1次请求</td><td>tsNwkxcd6voZ</td></tr><tr><td>专业</td><td><strong>/kline接口：</strong>每1秒，最大可20次请求<br><strong>/batch-kline接口：</strong><mark style="color:red;">每1秒，只能1次请求</mark><br><strong>/depth-tick接口：</strong>每1秒，最大20次请求<br><strong>/trade-tick接口：</strong>每1秒，最大20次请求<br><strong>/static_info接口：</strong>每1秒，最大可20次请求<br><br><strong>/api/suspension/sse接口</strong>：每1分钟只能1次请求<br><strong>/api/suspension/nyse接口</strong>：每1分钟只能1次请求<br><strong>/api/suspension/nasdaq接口</strong>：每1分钟只能1次请求</td><td>pkuUBdCJKeVY</td></tr><tr><td>全部港股</td><td><strong>/kline接口：</strong>每1秒，最大可20次请求<br><strong>/batch-kline接口：</strong><mark style="color:red;">每1秒，只能1次请求</mark><br><strong>/depth-tick接口：</strong>每1秒，最大20次请求<br><strong>/trade-tick接口：</strong>每1秒，最大20次请求<br><strong>/static_info接口：</strong>每1秒，最大可20次请求<br><br><strong>/api/suspension/sse接口</strong>：每1分钟只能1次请求<br><strong>/api/suspension/nyse接口</strong>：每1分钟只能1次请求<br><strong>/api/suspension/nasdaq接口</strong>：每1分钟只能1次请求</td><td>IIvjh9FIwck0</td></tr><tr><td>全部A股</td><td><strong>/kline接口：</strong>每1秒，最大可20次请求<br><strong>/batch-kline接口：</strong><mark style="color:red;">每1秒，只能1次请求</mark><br><strong>/depth-tick接口：</strong>每1秒，最大20次请求<br><strong>/trade-tick接口：</strong>每1秒，最大20次请求<br><strong>/static_info接口：</strong>每1秒，最大可20次请求<br><br><strong>/api/suspension/sse接口</strong>：每1分钟只能1次请求<br><strong>/api/suspension/nyse接口</strong>：每1分钟只能1次请求<br><strong>/api/suspension/nasdaq接口</strong>：每1分钟只能1次请求</td><td>XxcQX3kxK9Bd</td></tr><tr><td>全部美股</td><td><strong>/kline接口：</strong>每1秒，最大可20次请求<br><strong>/batch-kline接口：</strong><mark style="color:red;">每1秒，只能1次请求</mark><br><strong>/depth-tick接口：</strong>每1秒，最大20次请求<br><strong>/trade-tick接口：</strong>每1秒，最大20次请求<br><strong>/static_info接口：</strong>每1秒，最大可20次请求<br><br><strong>/api/suspension/sse接口</strong>：每1分钟只能1次请求<br><strong>/api/suspension/nyse接口</strong>：每1分钟只能1次请求<br><strong>/api/suspension/nasdaq接口</strong>：每1分钟只能1次请求</td><td>B2HL6KbwkIOJ</td></tr></tbody></table>
+<table data-full-width="false"><thead><tr><th width="81">计划</th><th width="342.0001220703125">单独请求</th><th width="332">同时请求多个http接口</th></tr></thead><tbody><tr><td>免费</td><td><strong>/kline接口：</strong>每10秒，只能1次请求<br><strong>/batch-kline接口：</strong><mark style="color:red;">每10秒，可1次请求</mark><br><strong>/trade-tick接口：</strong>每10秒，只能请求1次</td><td><p>1、10秒只能请求1个接口</p><p>2、需注意/batch-kline接口需间隔10秒 3、所有接口相加，1分钟最大请求10次(6秒1次) 4、每天总共最大可请求14400次，超过则第二天凌晨恢复使用</p></td></tr><tr><td>基础</td><td><strong>/kline接口：</strong>每1秒，只能1次请求<br><strong>/batch-kline接口：</strong><mark style="color:red;">每3秒，只能1次请求</mark><br><strong>/trade-tick接口：</strong>每1秒，只能1次请求</td><td><p>1、同1秒只能请求1个接口</p><p>2、需注意/batch-kline接口需间隔3秒 3、所有接口相加，1分钟最大请求60次(1秒1次) 4、每天总共最大可请求86400次，超过则第二天凌晨恢复使用</p></td></tr><tr><td>高级</td><td><strong>/kline接口：</strong>每1秒，最大可10次请求<br><strong>/batch-kline接口：</strong><mark style="color:red;">每2秒，只能1次请求</mark><br><strong>/trade-tick接口：</strong>每1秒，最大10次请求</td><td><p>1、所有接口相加，每1秒可请求10次</p><p>2、需注意/batch-kline接口需间隔2秒 3、所有接口相加，1分钟最大请求600次(1秒10次) 4、每天总共最大可请求864000次，超过则第二天凌晨恢复使用</p></td></tr><tr><td>专业</td><td><strong>/kline接口：</strong>每1秒，最大可20次请求<br><strong>/batch-kline接口：</strong><mark style="color:red;">每1秒，只能1次请求</mark><br><strong>/trade-tick接口：</strong>每1秒，最大20次请求</td><td><p>1、所有接口相加，每1秒可请求20次</p><p>2、需注意/batch-kline接口需间隔1秒 3、所有接口相加，1分钟最大请求1200次(1秒20次) 4、每天总共最大可请求1728000次，超过则第二天凌晨恢复使用</p></td></tr></tbody></table>
 
 ***
 
@@ -22,7 +22,7 @@
 * \*\*/kline接口：\*\*每次查询请求只能针对一个产品代码（code）查询K线数据，每次查询最多返回500根K线数据。如果请求查询超过500根的K线，系统将按500根数据进行查询并返回结果。
 * \*\*/batch-kline接口：\*\*每次查询请求可针对多个产品代码（code）查询K线数据，但购买的计划不同，可批量请求的代码（code）数量也不同，每次查询最多返回2根K线数据。如果请求查询超过2根的K线，系统将按2根数据进行查询并返回结果，详见下面表格。
 
-<table><thead><tr><th width="176">计划</th><th>/batch-kline接口，最大可请求代码（code）数量</th></tr></thead><tbody><tr><td>免费</td><td>每1次请求，最大可请求 5组数据，每1组数据=1只产品数量+1种K线类型，例如同时获取BTCUSDT的1分钟k线和5分钟k线，这就是2组数据</td></tr><tr><td>基础</td><td>每1次请求，最大可请求 100组数据，每1组数据=1只产品数量+1种K线类型，例如同时获取BTCUSDT的1分钟k线和5分钟k线，这就是2组数据</td></tr><tr><td>高级</td><td>每1次请求，最大可请求 200组数据，每1组数据=1只产品数量+1种K线类型，例如同时获取BTCUSDT的1分钟k线和5分钟k线，这就是2组数据</td></tr><tr><td>专业</td><td>每1次请求，最大可请求 500组数据，每1组数据=1只产品数量+1种K线类型，例如同时获取BTCUSDT的1分钟k线和5分钟k线，这就是2组数据</td></tr><tr><td>全部港股</td><td>每1次请求，最大可请求 500组数据，每1组数据=1只产品数量+1种K线类型，例如同时获取BTCUSDT的1分钟k线和5分钟k线，这就是2组数据</td></tr><tr><td>全部A股</td><td>每1次请求，最大可请求 500组数据，每1组数据=1只产品数量+1种K线类型，例如同时获取BTCUSDT的1分钟k线和5分钟k线，这就是2组数据</td></tr><tr><td>全部美股</td><td>每1次请求，最大可请求 500组数据，每1组数据=1只产品数量+1种K线类型，例如同时获取BTCUSDT的1分钟k线和5分钟k线，这就是2组数据</td></tr></tbody></table>
+<table><thead><tr><th width="176">计划</th><th>/batch-kline接口，最大可请求代码（code）数量</th></tr></thead><tbody><tr><td>免费</td><td>每1次请求，最大可请求 5组数据，每1组数据=1只产品数量+1种K线类型，例如同时获取BTCUSDT的1分钟k线和5分钟k线，这就是2组数据</td></tr><tr><td>基础</td><td>每1次请求，最大可请求 100组数据，每1组数据=1只产品数量+1种K线类型，例如同时获取BTCUSDT的1分钟k线和5分钟k线，这就是2组数据</td></tr><tr><td>高级</td><td>每1次请求，最大可请求 200组数据，每1组数据=1只产品数量+1种K线类型，例如同时获取BTCUSDT的1分钟k线和5分钟k线，这就是2组数据</td></tr><tr><td>专业</td><td>每1次请求，最大可请求 500组数据，每1组数据=1只产品数量+1种K线类型，例如同时获取BTCUSDT的1分钟k线和5分钟k线，这就是2组数据</td></tr></tbody></table>
 
 ***
 
@@ -31,25 +31,11 @@
 * \*\*/trade-tick接口：\*\*每次查询请求可针对多个产品代码（code）查询最新成交价格，但购买的计划不同，可批量请求的代码（code）数量也不同，详见下面表格
 * 如果查询请求超过购买的计划所规定的代码（code）数量，系统将仅针在规定数量内的最前面的代码进行查询并返回结果。
 
-<table><thead><tr><th width="227">计划</th><th>最大可请求代码（code）数量</th></tr></thead><tbody><tr><td>免费</td><td>每1次请求，最大可请求 5个code</td></tr><tr><td>基础</td><td>由于GET请求url长度限制，每次最大建议请求50个code<br>推荐使用websocket接口，支持批量订阅更多code：<a href="/broken/pages/99764bb8d346df29327f512408a88689904e1d4e">接口</a></td></tr><tr><td>高级</td><td>由于GET请求url长度限制，每次最大建议请求50个code<br>推荐使用websocket接口，支持批量订阅更多code：<a href="/broken/pages/99764bb8d346df29327f512408a88689904e1d4e">接口</a></td></tr><tr><td>专业</td><td>由于GET请求url长度限制，每次最大建议请求50个code<br>推荐使用websocket接口，支持批量订阅更多code：<a href="/broken/pages/99764bb8d346df29327f512408a88689904e1d4e">接口</a></td></tr><tr><td>全部港股</td><td>由于GET请求url长度限制，每次最大建议请求50个code<br>推荐使用websocket接口，支持批量订阅更多code：<a href="/broken/pages/99764bb8d346df29327f512408a88689904e1d4e">接口</a></td></tr><tr><td>全部A股</td><td>由于GET请求url长度限制，每次最大建议请求50个code<br>推荐使用websocket接口，支持批量订阅更多code：<a href="/broken/pages/99764bb8d346df29327f512408a88689904e1d4e">接口</a></td></tr><tr><td>全部美股</td><td>由于GET请求url长度限制，每次最大建议请求50个code<br>推荐使用websocket接口，支持批量订阅更多code：<a href="/broken/pages/99764bb8d346df29327f512408a88689904e1d4e">接口</a></td></tr></tbody></table>
+<table><thead><tr><th width="227">计划</th><th>最大可请求代码（code）数量</th></tr></thead><tbody><tr><td>免费</td><td>每1次请求，最大可请求 5个code</td></tr><tr><td>基础</td><td>由于GET请求url长度限制，每次最大建议请求50个code<br>推荐使用websocket接口，支持批量订阅更多code：<a href="/broken/pages/99764bb8d346df29327f512408a88689904e1d4e">接口</a></td></tr><tr><td>高级</td><td>由于GET请求url长度限制，每次最大建议请求50个code<br>推荐使用websocket接口，支持批量订阅更多code：<a href="/broken/pages/99764bb8d346df29327f512408a88689904e1d4e">接口</a></td></tr><tr><td>专业</td><td>由于GET请求url长度限制，每次最大建议请求50个code<br>推荐使用websocket接口，支持批量订阅更多code：<a href="/broken/pages/99764bb8d346df29327f512408a88689904e1d4e">接口</a></td></tr></tbody></table>
 
 ***
 
-### 5. 盘口深度(Order Book)查询限制
 
-* \*\*/depth-tick接口：\*\*每次查询请求可针对多个产品代码（code）查询盘口，但购买的计划不同，可批量请求的代码（code）数量也不同，详见下面表格
-* 如果查询请求超过计划所规定的代码（code）数量，系统将仅针在规定数量内的最前面的代码进行查询并返回结果。
-
-<table><thead><tr><th width="221">计划</th><th>最大可请求代码（code）数量</th></tr></thead><tbody><tr><td>免费</td><td>每1次请求，最大可请求 5个code</td></tr><tr><td>基础</td><td>由于GET请求url长度限制，每次最大建议请求50个code<br>推荐使用websocket接口，支持批量订阅更多code：<a href="/broken/pages/43a1d9cbae641fe77070d51a19e55e61f4fce08a">接口</a></td></tr><tr><td>高级</td><td>由于GET请求url长度限制，每次最大建议请求50个code<br>推荐使用websocket接口，支持批量订阅更多code：<a href="/broken/pages/43a1d9cbae641fe77070d51a19e55e61f4fce08a">接口</a></td></tr><tr><td>专业</td><td>由于GET请求url长度限制，每次最大建议请求50个code<br>推荐使用websocket接口，支持批量订阅更多code：<a href="/broken/pages/43a1d9cbae641fe77070d51a19e55e61f4fce08a">接口</a></td></tr><tr><td>全部港股</td><td>由于GET请求url长度限制，每次最大建议请求50个code<br>推荐使用websocket接口，支持批量订阅更多code：<a href="/broken/pages/43a1d9cbae641fe77070d51a19e55e61f4fce08a">接口</a></td></tr><tr><td>全部A股</td><td>由于GET请求url长度限制，每次最大建议请求50个code<br>推荐使用websocket接口，支持批量订阅更多code：<a href="/broken/pages/43a1d9cbae641fe77070d51a19e55e61f4fce08a">接口</a></td></tr><tr><td>全部美股</td><td>由于GET请求url长度限制，每次最大建议请求50个code<br>推荐使用websocket接口，支持批量订阅更多code：<a href="/broken/pages/43a1d9cbae641fe77070d51a19e55e61f4fce08a">接口</a></td></tr></tbody></table>
-
-***
-
-### 6. 基础信息查询限制
-
-* \*\*/static\_info接口：\*\*每次查询请求可针对多个产品代码（code）查询盘口，但购买的计划不同，可批量请求的代码（code）数量也不同，详见下面表格
-* 如果查询请求超过计划所规定的代码（code）数量，系统将仅针在规定数量内的最前面的代码进行查询并返回结果。
-
-<table><thead><tr><th width="221">计划</th><th>最大可请求代码（code）数量</th></tr></thead><tbody><tr><td>免费</td><td>每1次请求，最大可请求 5个code</td></tr><tr><td>基础</td><td>由于GET请求url长度限制，每次最大建议请求50个code</td></tr><tr><td>高级</td><td>由于GET请求url长度限制，每次最大建议请求50个code</td></tr><tr><td>专业</td><td>由于GET请求url长度限制，每次最大建议请求50个code</td></tr><tr><td>全部港股</td><td>由于GET请求url长度限制，每次最大建议请求50个code</td></tr><tr><td>全部A股</td><td>由于GET请求url长度限制，每次最大建议请求50个code</td></tr><tr><td>全部美股</td><td>由于GET请求url长度限制，每次最大建议请求50个code</td></tr></tbody></table>
 
 #### 注意事项
 
@@ -59,8 +45,8 @@
 
 ***
 
-AllTick网站
+XdTick网站
 
 {% hint style="info" %}
-官方网站：[https://alltick.co/](https://alltick.co/)
+官方网站：[https://xdtick.com/](https://alltick.co/)
 {% endhint %}

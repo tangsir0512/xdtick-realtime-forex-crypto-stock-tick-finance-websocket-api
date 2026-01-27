@@ -2,14 +2,14 @@
 
 [English](https://en.apis.alltick.co/integration-process/interface-restriction-description)/ 中文
 
-* HTTP 接口限制
-* Websocket 接口限制
-* 错误码说明
+* [HTTP 接口限制](http-jie-kou-xian-zhi.md)
+* [Websocket 接口限制](websocket-jie-kou-xian-zhi.md)
+* [错误码说明](cuo-wu-ma-shuo-ming.md)
 
 ***
 
-AllTick网站
+XdTick网站
 
 {% hint style="info" %}
-官方网站：[https://alltick.co/](https://alltick.co/)
+官方网站：[https://xdtick.com/](https://xdtick.com/)
 {% endhint %}

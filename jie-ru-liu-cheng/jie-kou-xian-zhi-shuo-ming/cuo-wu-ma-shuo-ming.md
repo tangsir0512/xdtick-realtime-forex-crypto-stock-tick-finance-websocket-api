@@ -162,8 +162,8 @@ Token 账号过期。
 
 点击查看接口限制说明：
 
-* [HTTP接口限制](/broken/pages/32947912c2c338588f1b16d2c9a4e7dae9ae0e8d)
-* [Websocket接口限制](/broken/pages/f9ec71562cb3a52f2c5a07a5a0db5faf79fa270d)
+* [HTTP接口限制](http-jie-kou-xian-zhi.md)
+* [Websocket接口限制](websocket-jie-kou-xian-zhi.md)
 
 ***
 
@@ -184,8 +184,7 @@ Token 账号过期。
 {% step %}
 ### 检查产品 code
 
-对照产品列表，确保代码有效且准确：\
-https://docs.google.com/spreadsheets/d/1avkeR1heZSj6gXIkDeBt8X3nv4EzJetw4yFuKjSDYtA/edit?gid=495387863#gid=495387863
+对照产品列表，确保代码有效且准确：[产品列表](../chan-pin-code-lie-biao/)
 {% endstep %}
 {% endstepper %}
 
@@ -253,7 +252,7 @@ K 线接口，确认同时请求的【产品数】加上【K 线类型】的总�
 {% endstep %}
 {% endstepper %}
 
-点击查看接口限制说明：[HTTP接口限制](/broken/pages/32947912c2c338588f1b16d2c9a4e7dae9ae0e8d)
+点击查看接口限制说明：[HTTP接口限制](http-jie-kou-xian-zhi.md)
 
 ***
 
@@ -287,8 +286,8 @@ K 线接口，确认同时请求的【产品数】加上【K 线类型】的总�
 
 点击查看接口限制说明：
 
-* [HTTP接口限制](/broken/pages/32947912c2c338588f1b16d2c9a4e7dae9ae0e8d)
-* [Websocket接口限制](/broken/pages/f9ec71562cb3a52f2c5a07a5a0db5faf79fa270d)
+* [HTTP接口限制](http-jie-kou-xian-zhi.md)
+* [Websocket接口限制](websocket-jie-kou-xian-zhi.md)
 
 ***
 
@@ -313,12 +312,12 @@ K 线接口，确认同时请求的【产品数】加上【K 线类型】的总�
 {% endstep %}
 {% endstepper %}
 
-点击查看接口限制说明：[Websocket接口限制](/broken/pages/f9ec71562cb3a52f2c5a07a5a0db5faf79fa270d)
+点击查看接口限制说明：[Websocket接口限制](websocket-jie-kou-xian-zhi.md)
 
 ***
 
-#### AllTick 网站
+#### XdTick 网站
 
 {% hint style="info" %}
-官方网站：[https://alltick.co/](https://alltick.co/)
+官方网站：[https://xdtick.com/](https://xdtick.com/)
 {% endhint %}
