@@ -13,11 +13,7 @@
 {% code title="请求示例" %}
 ```json
 {
-    "cmd_id":22000,
-    "seq_id":123,
-    "trace":"3baaa938-f92c-4a74-a228-fd49d5e2f8bc-1678419657806",
-    "data":{
-    }
+    "cmd_id":22000
 }
 ```
 {% endcode %}
@@ -29,17 +25,12 @@
 {% code title="应答示例" %}
 ```json
 {
-    "ret":200,
-    "msg":"ok",
-    "cmd_id":22001,
-    "seq_id":123,
-    "trace":"3baaa938-f92c-4a74-a228-fd49d5e2f8bc-1678419657806",
-    "data":{
-    }
+    "code":200,
+    "msg":"successful"
 }
 ```
 {% endcode %}
 
 {% hint style="info" %}
-官方网站：[https://alltick.co/](https://alltick.co/)
+官方网站：[https://alltick.com/](https://alltick.com/)
 {% endhint %}

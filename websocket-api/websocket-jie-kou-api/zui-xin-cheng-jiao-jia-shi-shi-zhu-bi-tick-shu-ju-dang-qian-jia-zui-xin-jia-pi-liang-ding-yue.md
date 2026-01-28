@@ -36,31 +36,20 @@
 
 ## 接口地址
 
-**1、美股、港股、A股、大盘数据接口地址：**
+**1、外汇、贵金属、加密货币、原油、CFD指数、商品接口地址：**
 
-* 基本路径: /quote-stock-b-ws-api
-* 完整URL: wss://quote.alltick.co/quote-stock-b-ws-api
-
-**2、外汇、贵金属、加密货币、原油、CFD指数、商品接口地址：**
-
-* 基本路径: /quote-b-ws-api
-* 完整URL: wss://quote.alltick.co/quote-b-ws-api
+* 基本路径: /tick-ws-api
+* 完整URL: wss://api.xdtick.com/tick-ws-api
 
 ## 请求示例
 
-**1、美股、港股、A股、大盘数据请求示例：**
-
-每次建立连接时，必须在URL中附加您的认证token，如下所示：
-
-wss://quote.alltick.co/quote-stock-b-ws-api?token=您的token
-
 连接成功后，您可以根据需要订阅特定的股票市场数据。详细的调用方法请参考下面的文档说明。
 
-**2、外汇、贵金属、加密货币、原油、CFD指数、商品请求示例：**
+**1、外汇、贵金属、加密货币、原油、CFD指数、商品请求示例：**
 
 每次建立连接时，必须在URL中附加您的认证token，如下所示：
 
-wss://quote.alltick.co/quote-b-ws-api?token=您的token
+wss://api.xdtick.com/tick-ws-api?token=您的token
 
 连接成功后，您可以根据需要订阅特定的外汇、加密货币、贵金属、商品数据。详细的调用方法请参考下面的文档说明.
 
@@ -68,18 +57,16 @@ wss://quote.alltick.co/quote-b-ws-api?token=您的token
 
 #### json定义
 
-| 字段           | 名称    | 类型      | 必填项 | 说明                        |
-| ------------ | ----- | ------- | --- | ------------------------- |
-| cmd\_id      | 协议号   | integer | 是   | 逐笔订阅请求协议号固定：22004         |
-| seq\_id      | 响应id  | integer | 是   | 订阅请求标识，响应回传(自定义，每次请求可重复)  |
-| trace        | 可追溯id | string  | 是   | 请求日志信息可追溯id(自定义，每次请求不可重复) |
-| symbol\_list | 产品列表  | array   | 是   | 具体格式见下面symbol定义           |
+| 字段      | 名称   | 类型      | 必填项 | 说明                |
+| ------- | ---- | ------- | --- | ----------------- |
+| cmd\_id | 协议号  | integer | 是   | 逐笔订阅请求协议号固定：22004 |
+| codes   | 产品列表 | array   | 是   | 具体格式见下面symbol定义   |
 
 #### symbol定义
 
-| 字段   | 名称 | 类型     | 必填项 | 说明                                                                                                                                               |
-| ---- | -- | ------ | --- | ------------------------------------------------------------------------------------------------------------------------------------------------ |
-| code | 代码 | string | 是   | 具体内容，请查阅code列表： [点击code列表](https://docs.google.com/spreadsheets/d/1avkeR1heZSj6gXIkDeBt8X3nv4EzJetw4yFuKjSDYtA/edit?gid=495387863#gid=495387863) |
+| 字段   | 名称 | 类型     | 必填项 | 说明                                                                         |
+| ---- | -- | ------ | --- | -------------------------------------------------------------------------- |
+| code | 代码 | string | 是   | 具体内容，请查阅code列表：[ 点击code列表](../../jie-ru-liu-cheng/chan-pin-code-lie-biao/) |
 
 ### 数据结构(json)
 
@@ -87,18 +74,7 @@ wss://quote.alltick.co/quote-b-ws-api?token=您的token
 ```json
 {
     "cmd_id":22004,
-    "seq_id":123,
-    "trace":"3baaa938-f92c-4a74-a228-fd49d5e2f8bc-1678419657806",
-    "data":{
-        "symbol_list": [
-            {
-                "code": "BTCUSDT"
-            },
-            {
-                "code": "ETHUSDT"
-            }
-        ]
-    }
+    "codes": "BTCUSD,ETHUSD"
 }
 ```
 {% endcode %}
@@ -110,13 +86,26 @@ wss://quote.alltick.co/quote-b-ws-api?token=您的token
 {% code title="应答示例.json" %}
 ```json
 {
-    "ret":200,
-    "msg":"ok",
-    "cmd_id":22005,
-    "seq_id":123,
-    "trace":"3baaa938-f92c-4a74-a228-fd49d5e2f8bc-1678419657806",
-    "data":{
-    }    
+    "msg": "successful",
+    "code": 200,
+    "data": {
+        "tick_list": [
+            {
+                "volume": 0.99173000,
+                "code": "BTCUSD",
+                "price": 89262.11000000,
+                "turnover": 88523.9123503000000000,
+                "timestamp": 1769616358
+            },
+            {
+                "volume": 12.13900000,
+                "code": "ETHUSD",
+                "price": 2966.71000000,
+                "turnover": 36012.8926900000000000,
+                "timestamp": 1769616358
+            }
+        ]
+    }
 }
 ```
 {% endcode %}
@@ -125,15 +114,13 @@ wss://quote.alltick.co/quote-b-ws-api?token=您的token
 
 #### data定义
 
-| 字段               | 名称    | 类型     | 说明                                                                                                                                                                    |
-| ---------------- | ----- | ------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| code             | 代码    | string | 具体内容，请查阅code列表： [点击code列表](https://docs.google.com/spreadsheets/d/1avkeR1heZSj6gXIkDeBt8X3nv4EzJetw4yFuKjSDYtA/edit?gid=495387863#gid=495387863)                      |
-| seq              | 报价序号  | string |                                                                                                                                                                       |
-| tick\_time       | 报价时间戳 | string | 单位毫秒                                                                                                                                                                  |
-| price            | 成交价   | string | 最新成交价                                                                                                                                                                 |
-| volume           | 成交量   | string | 最新一口成交价对应的成交量                                                                                                                                                         |
-| turnover         | 成交额   | string | 成交额：\n1、外汇、贵金属、能源不返回成交额，可自行根据每次推送的数据计算，计算公式：turnover = price \* volume\n2、股票、加密货币正常返回成交额。                                                                             |
-| trade\_direction | 成交方向  | string | 交易方向：\n1、0为默认值，1为Buy，2为SELL\n2、外汇、贵金属、能源默认只会返回0\n3、股票、加密货币根据市场情况会返回0、1、2\n4、详细说明：\n0:表示中性盘，即以买一价与卖一价之间的价格撮合成交。\n1:表示主动买入，即以卖一价或者更高价格成交的股票 \n2:表示主动卖出，即以买一价或者更低价格成交的股票 |
+| 字段          | 名称    | 类型     | 说明                                                                                                                                               |
+| ----------- | ----- | ------ | ------------------------------------------------------------------------------------------------------------------------------------------------ |
+| code        | 代码    | string | 具体内容，请查阅code列表： [点击code列表](https://docs.google.com/spreadsheets/d/1avkeR1heZSj6gXIkDeBt8X3nv4EzJetw4yFuKjSDYtA/edit?gid=495387863#gid=495387863) |
+| timestamp   | 报价时间戳 | string | 单位毫秒                                                                                                                                             |
+| price       | 成交价   | string | 最新成交价                                                                                                                                            |
+| volume      | 成交量   | string | 最新一口成交价对应的成交量                                                                                                                                    |
+| quoteVolume | 成交额   | string | 成交额：\n1、外汇、贵金属、能源不返回成交额，可自行根据每次推送的数据计算，计算公式：turnover = price \* volume\n2、股票、加密货币正常返回成交额。                                                        |
 
 ### 数据结构（json）
 
@@ -142,18 +129,16 @@ wss://quote.alltick.co/quote-b-ws-api?token=您的token
 {
     "cmd_id":22998,
     "data":{
-        "code": "1288.HK",
-        "seq": "1605509068000001",
-        "tick_time": "1605509068",
+        "code": "BTCUSD",
+        "timestamp": "1605509068",
         "price": "651.12",
         "volume": "300",
-        "turnover": "12345.6",
-        "trade_direction": 1
+        "quoteVolume": "12345.6"
     }
 }
 ```
 {% endcode %}
 
 {% hint style="info" %}
-官方网站：[https://alltick.co/](https://alltick.co/)
+官方网站：[https://xdtick.com/](https://xdtick.com/)
 {% endhint %}

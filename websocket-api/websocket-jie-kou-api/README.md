@@ -7,5 +7,5 @@
 * [K线推送](k-xian-tui-song-bu-zhi-chi.md)
 
 {% hint style="info" %}
-官方网站：[https://alltick.co/](https://alltick.co/)
+官方网站：[https://xdtick.com/](https://xdtick.com/)
 {% endhint %}
