@@ -408,8 +408,8 @@ if __name__ == "__main__":
 
 ***
 
-#### AllTick网站
+#### XdTick网站
 
 {% hint style="info" %}
-官方网站：[https://alltick.co/](https://alltick.co/)
+官方网站：[https://xdtick.com/](https://xdtick.com/)
 {% endhint %}

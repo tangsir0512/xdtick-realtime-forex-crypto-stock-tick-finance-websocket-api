@@ -15,9 +15,9 @@ https://api.xdtick.com/tick-api
 
 示例：
 
-* 单产品请求 K 线： [http:///api.xdtick.com/tick-api/kline?code=BTCUSD\&klineType=1min\&size=2](http://api.xdtick.com/tick-api/kline?code=BTCUSD\&klineType=1min\&size=2)
-* 批产品请求 K 线（注意：批量请求时，请求参数放在 body 中）：  [http:///api.xdtick.com/tick-api/batch-kline](http://api.xdtick.com/tick-api/batch-kline)
-* 请求最新成交价：[http:///api.xdtick.com/tick-api/trade-tick](http://api.xdtick.com/tick-api/trade-tick)
+* 单产品请求 K 线： [https:///api.xdtick.com/tick-api/kline?code=BTCUSD\&klineType=1min\&size=2](http://api.xdtick.com/tick-api/kline?code=BTCUSD\&klineType=1min\&size=2)
+* 批产品请求 K 线（注意：批量请求时，请求参数放在 body 中）：  [https:///api.xdtick.com/tick-api/batch-kline](http://api.xdtick.com/tick-api/batch-kline)
+* 请求最新成交价：[https:///api.xdtick.com/tick-api/trade-tick](http://api.xdtick.com/tick-api/trade-tick)
 
 具体调用方式，请查看 http 接口列表。
 

@@ -69,5 +69,5 @@
 通过遵循这个优化流程，您将能够更加高效和有效地利用接口来访问和使用股票以及金融市场数据。
 
 {% hint style="info" %}
-官方网站：[https://alltick.co/](https://alltick.co/)
+官方网站：[https://xdtick.com/](https://xdtick.com/)
 {% endhint %}

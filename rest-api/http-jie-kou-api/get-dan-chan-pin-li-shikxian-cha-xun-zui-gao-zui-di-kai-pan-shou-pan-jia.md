@@ -32,40 +32,31 @@
 
 ## 接口限制
 
-1、请务必阅读：[HTTP接口限制说明](https://apis.alltick.co/integration-process/interface-restriction-description/http-interface-restrictions)
+1、请务必阅读：[HTTP接口限制说明](../../jie-ru-liu-cheng/jie-kou-xian-zhi-shuo-ming/http-jie-kou-xian-zhi.md)
 
-2、请务必阅读：[错误码说明](https://apis.alltick.co/integration-process/interface-restriction-description/error-code-description)
+2、请务必阅读：[错误码说明](../../jie-ru-liu-cheng/jie-kou-xian-zhi-shuo-ming/cuo-wu-ma-shuo-ming.md)
 
 ## 接口地址
 
-**1、美股、港股、A股、大盘数据接口地址：**
+**1、外汇、贵金属、加密货币、原油、CFD指数、商品接口地址：**
 
-* 基本路径: /quote-stock-b-api/kline
-* 完整URL: [https://quote.alltick.co/quote-stock-b-api/kline](https://quote.alltick.co/quote-stock-b-api/kline)
-
-**2、外汇、贵金属、加密货币、原油、CFD指数、商品接口地址：**
-
-* 基本路径: /quote-b-api/kline
-* 完整URL: [https://quote.alltick.co/quote-b-api/kline](https://quote.alltick.co/quote-b-api/kline)
+* 基本路径: /tick-api/kline
+* 完整URL: [https://api.xdtick.com/tick-api/kline](https://api.xdtick.com/tick-api/kline)
 
 ## 请求示例
 
-**1、美股、港股、A股、大盘数据请求示例：**
+**1、外汇、贵金属、加密货币、原油、CFD指数、商品请求示例：**
 
 在发送查询请求时，必须包含方法名和token信息。一个请求的示例如下：\
-https://quote.alltick.co/quote-stock-b-api/kline?token=您的token\&query=queryData
-
-**2、外汇、贵金属、加密货币、原油、CFD指数、商品请求示例：**
-
-在发送查询请求时，必须包含方法名和token信息。一个请求的示例如下：\
-https://quote.alltick.co/quote-b-api/kline?token=您的token\&query=queryData
+https://api.xdtick.com/tick-api/kline?code=BTCUSD\&klineType=1min\&size=2
 
 ## 请求参数
 
-| 名称    | 位置    | 类型     | 必选 | 说明            |
-| ----- | ----- | ------ | -- | ------------- |
-| token | query | string | 否  |               |
-| query | query | string | 否  | 查看query请求参数说明 |
+| 名称        | 位置    | 类型     | 必选 | 说明            |
+| --------- | ----- | ------ | -- | ------------- |
+| code      | query | string | 否  |               |
+| klineType | query | string | 否  | 查看query请求参数说明 |
+| size      | query | Int    | 否  |               |
 
 ## query 请求参数 示例
 
