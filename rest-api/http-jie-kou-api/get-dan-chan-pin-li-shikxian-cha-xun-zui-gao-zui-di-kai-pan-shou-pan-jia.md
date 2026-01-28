@@ -52,62 +52,58 @@ https://api.xdtick.com/tick-api/kline?code=BTCUSD\&klineType=1min\&size=2
 
 ## 请求参数
 
-| 名称        | 位置    | 类型     | 必选 | 说明            |
-| --------- | ----- | ------ | -- | ------------- |
-| code      | query | string | 否  |               |
-| klineType | query | string | 否  | 查看query请求参数说明 |
-| size      | query | Int    | 否  |               |
+| 名称        | 位置    | 类型     | 必选 | 说明                                                                                   |
+| --------- | ----- | ------ | -- | ------------------------------------------------------------------------------------ |
+| code      | query | string | 否  | 请查看code列表，选择你要查询的code：[\[点击code列表\]](../../jie-ru-liu-cheng/chan-pin-code-lie-biao/) |
+| klineType | query | string | 否  | 1min=1分钟,5min=5分钟，15min=15分钟，30min=30分钟，60min=1小时，1d=1天，1w=1周，1m=1月                  |
+| size      | query | Int    | 否  | 表示查询多少根K线，每次最大请求1000根，可根据时间戳循环往前请求                                                   |
 
 ## query 请求参数 示例
 
 ```
 {
-  "trace": "3baaa938-f92c-4a74-a228-fd49d5e2f8bc-1678419657806",
-  "data": {
-    "code": "857.HK",
-    "kline_type": 1,
-    "kline_timestamp_end": 0,
-    "query_kline_num": 2,
-    "adjust_type": 0
-  }
+  "code": "BTCUSD",
+  "klineType": "1min",
+  "size": 500
 }
 ```
-
-参数说明：
-
-<table data-full-width="false"><thead><tr><th width="211.7999267578125">名称</th><th width="112">类型</th><th width="83.199951171875">必选</th><th>说明</th></tr></thead><tbody><tr><td>trace</td><td>string</td><td>是</td><td>追踪码，用来查询日志使用，请保证每次请求时唯一</td></tr><tr><td>data</td><td>object</td><td>是</td><td></td></tr><tr><td>» code</td><td>string</td><td>是</td><td>请查看code列表，选择你要查询的code：<a href="https://docs.google.com/spreadsheets/d/1avkeR1heZSj6gXIkDeBt8X3nv4EzJetw4yFuKjSDYtA/edit?gid=495387863#gid=495387863">[点击code列表]</a></td></tr><tr><td>» kline_type</td><td>integer</td><td>是</td><td>k线类型 1、1是1分钟K，2是5分钟K，3是15分钟K，4是30分钟K，5是小时K，6是2小时K(股票不支持2小时)，7是4小时K(股票不支持4小时)，8是日K，9是周K，10是月K （注：股票不支持2小时K、4小时K） 2、最短的k线只支持1分钟 3、查询<mark style="color:red;">昨日收盘价</mark>，kline_type 传8</td></tr><tr><td>» kline_timestamp_end</td><td>integer</td><td>是</td><td>从指定时间往前查询K线 1、传0表示从当前最新的交易日往前查k线 2、指定时间请传时间戳，传时间戳表示从该时间戳往前查k线 3、只有外汇贵金属加密货币支持传时间戳，股票类的code不支持</td></tr><tr><td>» query_kline_num</td><td>integer</td><td>是</td><td>1、表示查询多少根K线，每次最大请求500根，可根据时间戳循环往前请求 2、通过该字段可查询<mark style="color:red;">昨日收盘价</mark>，kline_type 传8，query_kline_num传2，返回2根k线数据中，时间戳较小的数据是昨日收盘价</td></tr><tr><td>» adjust_type</td><td>integer</td><td>是</td><td>复权类型,对于股票类的code才有效，例如：0:除权,1:前复权，目前仅支持0</td></tr></tbody></table>
 
 ## 返回示例
 
 ```
 {
-  "ret": 200,
-  "msg": "ok",
-  "trace": "3baaa938-f92c-4a74-a228-fd49d5e2f8bc-1678419657806",
-  "data": {
-    "code": "857.HK",
-    "kline_type": 1,
-    "kline_list": [
-      {
-        "timestamp": "1677829200",
-        "open_price": "136.421",
-        "close_price": "136.412",
-        "high_price": "136.422",
-        "low_price": "136.407",
-        "volume": "0",
-        "turnover": "0"
-      },
-      {
-        "timestamp": "1677829260",
-        "open_price": "136.412",
-        "close_price": "136.401",
-        "high_price": "136.415",
-        "low_price": "136.397",
-        "volume": "0",
-        "turnover": "0"
-      }
-    ]
-  }
+    "msg": "successful",
+    "code": 200,
+    "data": {
+        "code": "BTCUSD",
+        "klineType": "1min",
+        "klineList": [
+            {
+                "volume": 0.99173000,
+                "high": 89287.17000000,
+                "low": 89262.10000000,
+                "startTime": "2026-01-21T18:46:00",
+                "quoteVolume": 88536.41615210,
+                "changeAmount": -25.06000000,
+                "changeRate": -0.00028067,
+                "close": 89262.11000000,
+                "open": 89287.17000000,
+                "timestamp": 1768992360000
+            },
+            {
+                "volume": 5.05343000,
+                "high": 89310.63000000,
+                "low": 89287.16000000,
+                "startTime": "2026-01-21T18:45:00",
+                "quoteVolume": 451249.76464880,
+                "changeAmount": -23.46000000,
+                "changeRate": -0.00026268,
+                "close": 89287.17000000,
+                "open": 89310.63000000,
+                "timestamp": 1768992300000
+            }
+        ]
+    }
 }
 ```
 
@@ -119,10 +115,10 @@ https://api.xdtick.com/tick-api/kline?code=BTCUSD\&klineType=1min\&size=2
 
 ## 返回数据结构
 
-<table data-full-width="false"><thead><tr><th width="137">名称</th><th width="186">类型</th><th width="105.5999755859375">必选</th><th>说明</th></tr></thead><tbody><tr><td>» ret</td><td>integer</td><td>true</td><td></td></tr><tr><td>» msg</td><td>string</td><td>true</td><td></td></tr><tr><td>» trace</td><td>string</td><td>true</td><td></td></tr><tr><td>» data</td><td>object</td><td>true</td><td></td></tr><tr><td>»» code</td><td>string</td><td>true</td><td>代码</td></tr><tr><td>»» kline_type</td><td>integer</td><td>true</td><td>k线类型 1、1是1分钟K，2是5分钟K，3是15分钟K，4是30分钟K，5是小时K，6是2小时K(股票不支持2小时)，7是4小时K(股票不支持4小时)，8是日K，9是周K，10是月K （注：股票不支持2小时K、4小时K） 2、最短的k线只支持1分钟</td></tr><tr><td>»» kline_list</td><td>[object]</td><td>true</td><td></td></tr><tr><td>»»» timestamp</td><td>string</td><td>true</td><td>该K线时间戳</td></tr><tr><td>»»» open_price</td><td>string</td><td>true</td><td>该K线开盘价</td></tr><tr><td>»»» close_price</td><td>string</td><td>true</td><td>该K线收盘价： 1、交易时段内，最新一根K线，该价格也是最新成交价 2、休市期间，最新一根K线，该价格是收盘价</td></tr><tr><td>»»» high_price</td><td>string</td><td>true</td><td>该K线最高价</td></tr><tr><td>»»» low_price</td><td>string</td><td>true</td><td>该K线最低价</td></tr><tr><td>»»» volume</td><td>string</td><td>true</td><td>该K线成交数量</td></tr><tr><td>»»» turnover</td><td>string</td><td>true</td><td>该K线成交金额</td></tr></tbody></table>
+<table data-full-width="false"><thead><tr><th width="137">名称</th><th width="186">类型</th><th width="105.5999755859375">必选</th><th>说明</th></tr></thead><tbody><tr><td>» msg</td><td>string</td><td>true</td><td></td></tr><tr><td>» data</td><td>object</td><td>true</td><td></td></tr><tr><td>»» code</td><td>string</td><td>true</td><td>产品代码</td></tr><tr><td>»» klineType</td><td>string</td><td>true</td><td>1min=1分钟,5min=5分钟，15min=15分钟，30min=30分钟，60min=1小时，1d=1天，1w=1周，1m=1月</td></tr><tr><td>»» klineList</td><td>[object]</td><td>true</td><td></td></tr><tr><td>»»» timestamp</td><td>string</td><td>true</td><td>该K线时间戳</td></tr><tr><td>»»» open</td><td>string</td><td>true</td><td>该K线开盘价</td></tr><tr><td>»»» close</td><td>string</td><td>true</td><td>该K线收盘价： 1、交易时段内，最新一根K线，该价格也是最新成交价 2、休市期间，最新一根K线，该价格是收盘价</td></tr><tr><td>»»» high</td><td>string</td><td>true</td><td>该K线最高价</td></tr><tr><td>»»» low</td><td>string</td><td>true</td><td>该K线最低价</td></tr><tr><td>»»» volume</td><td>string</td><td>true</td><td>该K线成交数量</td></tr><tr><td>»»» changeAmount</td><td>string</td><td>true</td><td>该K线涨跌金额</td></tr><tr><td>»»» changeRate</td><td>string</td><td>true</td><td>该K线涨跌比例</td></tr><tr><td>»»» quoteVolume</td><td>string</td><td>true</td><td>该K线成交额</td></tr></tbody></table>
 
-#### AllTick网站
+#### XdTick网站
 
 {% hint style="info" %}
-官方网站：[https://alltick.co/](https://alltick.co/)
+官方网站：[https://xdtick.com/](https://xdtick.com/)
 {% endhint %}

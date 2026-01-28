@@ -10,50 +10,39 @@
 
 ## 请求频率
 
-<table data-full-width="false"><thead><tr><th width="89.79998779296875">计划</th><th width="198.4000244140625">单独请求</th><th width="472">同时请求多个http接口</th></tr></thead><tbody><tr><td>免费</td><td>1、每10秒，只能1次请求<br>2、每次最大可批量查询5个产品</td><td><p>1、10秒只能请求1个接口</p><p><mark style="color:red;">2、多个接口请求时，需注意/batch-kline接口需间隔10秒</mark><br>3、所有接口相加，1分钟最大请求10次(6秒1次)<br>4、每天总共最大可请求14400次，超过则第二天凌晨恢复使用</p></td></tr><tr><td>基础</td><td>1、每1秒，只能1次请求<br>2、由于GET请求url长度限制，每次最大建议请求50个code</td><td><p>1、同1秒只能请求1个接口</p><p><mark style="color:red;">2、多个接口请求时，需注意/batch-kline接口需间隔3秒</mark><br>3、所有接口相加，1分钟最大请求60次(1秒1次)<br>4、每天总共最大可请求86400次，超过则第二天凌晨恢复使用</p></td></tr><tr><td>高级</td><td>1、每1秒，最大可10次请求<br>2、由于GET请求url长度限制，每次最大建议请求50个code</td><td><p>1、所以接口相加，每1秒可请求10次</p><p><mark style="color:red;">2、多个接口请求时，需注意/batch-kline接口需间隔2秒</mark><br>3、所有接口相加，1分钟最大请求600次(1秒10次)<br>4、每天总共最大可请求864000次，超过则第二天凌晨恢复使用</p></td></tr><tr><td>专业</td><td>1、每1秒，最大可20次请求<br>2、由于GET请求url长度限制，每次最大建议请求50个code</td><td><p>1、所以接口相加，每1秒可请求20次</p><p><mark style="color:red;">2、多个接口请求时，需注意/batch-kline接口需间隔1秒</mark><br>3、所有接口相加，1分钟最大请求1200次(1秒20次)<br>4、每天总共最大可请求1728000次，超过则第二天凌晨恢复使用</p></td></tr><tr><td>全部港股</td><td>1、每1秒，最大可20次请求<br>2、由于GET请求url长度限制，每次最大建议请求50个code</td><td><p>1、所以接口相加，每1秒可请求20次</p><p><mark style="color:red;">2、多个接口请求时，需注意/batch-kline接口需间隔1秒</mark><br>3、所有接口相加，1分钟最大请求1200次(1秒20次)<br>4、每天总共最大可请求1728000次，超过则第二天凌晨恢复使用</p></td></tr><tr><td>全部A股</td><td>1、每1秒，最大可20次请求<br>2、由于GET请求url长度限制，每次最大建议请求50个code</td><td><p>1、所以接口相加，每1秒可请求20次</p><p><mark style="color:red;">2、多个接口请求时，需注意/batch-kline接口需间隔1秒</mark><br>3、所有接口相加，1分钟最大请求1200次(1秒20次)<br>4、每天总共最大可请求1728000次，超过则第二天凌晨恢复使用</p></td></tr><tr><td>全部美股</td><td>1、每1秒，最大可20次请求<br>2、由于GET请求url长度限制，每次最大建议请求50个code</td><td><p>1、所以接口相加，每1秒可请求20次</p><p><mark style="color:red;">2、多个接口请求时，需注意/batch-kline接口需间隔1秒</mark><br>3、所有接口相加，1分钟最大请求1200次(1秒20次)<br>4、每天总共最大可请求1728000次，超过则第二天凌晨恢复使用</p></td></tr></tbody></table>
+<table data-full-width="false"><thead><tr><th width="89.79998779296875">计划</th><th width="198.4000244140625">单独请求</th><th width="472">同时请求多个http接口</th></tr></thead><tbody><tr><td>免费</td><td>1、每10秒，只能1次请求<br>2、每次最大可批量查询5个产品</td><td><p>1、10秒只能请求1个接口</p><p><mark style="color:red;">2、多个接口请求时，需注意/batch-kline接口需间隔10秒</mark><br>3、所有接口相加，1分钟最大请求10次(6秒1次)<br>4、每天总共最大可请求14400次，超过则第二天凌晨恢复使用</p></td></tr><tr><td>基础</td><td>1、每1秒，只能1次请求<br>2、由于GET请求url长度限制，每次最大建议请求50个code</td><td><p>1、同1秒只能请求1个接口</p><p><mark style="color:red;">2、多个接口请求时，需注意/batch-kline接口需间隔3秒</mark><br>3、所有接口相加，1分钟最大请求60次(1秒1次)<br>4、每天总共最大可请求86400次，超过则第二天凌晨恢复使用</p></td></tr><tr><td>高级</td><td>1、每1秒，最大可10次请求<br>2、由于GET请求url长度限制，每次最大建议请求50个code</td><td><p>1、所以接口相加，每1秒可请求10次</p><p><mark style="color:red;">2、多个接口请求时，需注意/batch-kline接口需间隔2秒</mark><br>3、所有接口相加，1分钟最大请求600次(1秒10次)<br>4、每天总共最大可请求864000次，超过则第二天凌晨恢复使用</p></td></tr><tr><td>专业</td><td>1、每1秒，最大可20次请求<br>2、由于GET请求url长度限制，每次最大建议请求50个code</td><td><p>1、所以接口相加，每1秒可请求20次</p><p><mark style="color:red;">2、多个接口请求时，需注意/batch-kline接口需间隔1秒</mark><br>3、所有接口相加，1分钟最大请求1200次(1秒20次)<br>4、每天总共最大可请求1728000次，超过则第二天凌晨恢复使用</p></td></tr></tbody></table>
 
 ## 接口限制
 
-1、请务必阅读：[HTTP接口限制说明](https://apis.alltick.co/integration-process/interface-restriction-description/http-interface-restrictions)
+1、请务必阅读：[HTTP接口限制说明](../../jie-ru-liu-cheng/jie-kou-xian-zhi-shuo-ming/http-jie-kou-xian-zhi.md)
 
-2、请务必阅读：[错误码说明](https://apis.alltick.co/integration-process/interface-restriction-description/error-code-description)
+2、请务必阅读：[错误码说明](../../jie-ru-liu-cheng/jie-kou-xian-zhi-shuo-ming/cuo-wu-ma-shuo-ming.md)
 
 ## 接口地址
 
 {% tabs %}
-{% tab title="美股、港股、A股、大盘" %}
-* 基本路径: /quote-stock-b-api/trade-tick
-* 完整URL: [https://quote.alltick.co/quote-stock-b-api/trade-tick](https://quote.alltick.co/quote-stock-b-api/trade-tick)
-{% endtab %}
-
 {% tab title="外汇、贵金属、加密货币、原油、CFD指数、商品" %}
-* 基本路径: /quote-b-api/trade-tick
-* 完整URL: [https://quote.alltick.co/quote-b-api/trade-tick](https://quote.alltick.co/quote-b-api/trade-tick)
+* 基本路径: /tick-api/trade-tick
+* 完整URL: https://api.xdtick.com/tick-api/trade-tick
 {% endtab %}
 {% endtabs %}
 
 ## 请求示例
 
 {% tabs %}
-{% tab title="美股、港股、A股、大盘" %}
-在发送查询请求时，必须包含token和query参数。示例：
-
-https://quote.alltick.co/quote-stock-b-api/trade-tick?token=您的token\&query=queryData
-{% endtab %}
-
 {% tab title="外汇、贵金属、加密货币、原油、CFD指数、商品" %}
 在发送查询请求时，必须包含token和query参数。示例：
 
-https://quote.alltick.co/quote-b-api/trade-tick?token=您的token\&query=queryData
+https://api.xdtick.com/tick-api/trade-tick?codes=BTCUSD,ETHUSD
 {% endtab %}
 {% endtabs %}
 
 ## 请求参数
 
-| 名称    | 位置    | 类型     | 必选 | 说明            |
-| ----- | ----- | ------ | -- | ------------- |
-| token | query | string | 否  |               |
-| query | query | string | 否  | 查看query请求参数说明 |
+| 名称    | 位置     | 类型     | 必选 | 说明   |
+| ----- | ------ | ------ | -- | ---- |
+| token | Header | string | 否  |      |
+| codes | query  | string | 否  | 产品代码 |
 
 ## query请求参数
 
@@ -62,7 +51,7 @@ https://quote.alltick.co/quote-b-api/trade-tick?token=您的token\&query=queryDa
 {% code title="query 示例" %}
 ```json
 {
-  "trace": "edd5df80-df7f-4acf-8f67-68fd2f096426",
+  ": "edd5df80-df7f-4acf-8f67-68fd2f096426",
   "data": {
     "symbol_list": [
       {
