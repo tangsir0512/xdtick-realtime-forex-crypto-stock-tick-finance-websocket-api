@@ -1,6 +1,6 @@
 # K线推送(不支持)
 
-[English](https://app.gitbook.com/s/hl2stTwtjPsR73Ky9JWD/websocket-api/websocket-interface-api/ping-pong-1) / 中文
+English / 中文
 
 {% hint style="danger" %}
 Xdtick 的 WebSocket 接口不支持 K 线数据的推送。无论是历史 K 线还是实时 K 线，目前仅支持通过 HTTP 接口直接获取。

@@ -1,6 +1,6 @@
 # Token 申请
 
-[English ](https://en.apis.alltick.co/integration-process/token-application)/ 中文
+English / 中文
 
 ## 申请流程
 

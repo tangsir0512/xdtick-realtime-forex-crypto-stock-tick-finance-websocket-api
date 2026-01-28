@@ -1,6 +1,6 @@
 # Websocket 接口限制
 
-[English ](https://en.apis.alltick.co/integration-process/interface-restriction-description/websocket-interface-limitations)/ 中文
+English / 中文
 
 ## WebSocket接口限制
 

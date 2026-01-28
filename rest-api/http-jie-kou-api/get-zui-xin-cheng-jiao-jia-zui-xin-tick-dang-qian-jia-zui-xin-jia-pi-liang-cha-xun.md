@@ -1,6 +1,6 @@
 # GET 最新成交价(最新tick、当前价、最新价)批量查询
 
-[English ](https://en.apis.alltick.co/rest-api/stock-http-interface-api/get-latest-transaction-price-query)/ 中文
+English / 中文
 
 ## GET /trade-tick
 

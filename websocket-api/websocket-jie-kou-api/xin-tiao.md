@@ -1,6 +1,6 @@
 # 心跳
 
-[English ](https://en.apis.alltick.co/websocket-api/stock-websocket-interface-api/ping-pang)/ 中文
+English / 中文
 
 ## 接口说明
 

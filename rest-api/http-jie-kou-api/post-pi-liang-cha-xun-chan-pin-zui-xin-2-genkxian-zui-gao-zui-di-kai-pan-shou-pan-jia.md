@@ -1,6 +1,6 @@
 # POST 批量查询产品最新2根K线（最高、最低、开盘、收盘价）
 
-[English](https://en.apis.alltick.co/rest-api/stock-http-interface-api/get-batch-k-line-query) / 中文
+English / 中文
 
 ## POST /batch-kline
 

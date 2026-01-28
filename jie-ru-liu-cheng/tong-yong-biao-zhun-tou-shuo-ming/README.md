@@ -1,6 +1,6 @@
 # 通用标准头说明
 
-[English ](https://en.apis.alltick.co/integration-process/universal-standard-header-description)/ 中文
+English / 中文
 
 {% content-ref url="http-tong-yong-biao-zhun-tou.md" %}
 [http-tong-yong-biao-zhun-tou.md](http-tong-yong-biao-zhun-tou.md)

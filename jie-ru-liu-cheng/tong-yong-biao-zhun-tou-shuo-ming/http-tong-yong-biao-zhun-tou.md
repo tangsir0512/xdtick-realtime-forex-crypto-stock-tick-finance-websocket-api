@@ -1,6 +1,6 @@
 # HTTP 通用标准头
 
-[English ](https://en.apis.alltick.co/integration-process/universal-standard-header-description/http-common-standard-headers)/ 中文
+English / 中文
 
 ## 请求通用标准头介绍
 

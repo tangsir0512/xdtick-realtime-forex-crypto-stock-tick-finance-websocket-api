@@ -1,6 +1,6 @@
 # Websocket接口API
 
-[English](https://en.apis.alltick.co/websocket-api/stock-websocket-interface-api/)
+English
 
 * [最新成交价](zui-xin-cheng-jiao-jia-shi-shi-zhu-bi-tick-shu-ju-dang-qian-jia-zui-xin-jia-pi-liang-ding-yue.md)
 * [心跳](xin-tiao.md)

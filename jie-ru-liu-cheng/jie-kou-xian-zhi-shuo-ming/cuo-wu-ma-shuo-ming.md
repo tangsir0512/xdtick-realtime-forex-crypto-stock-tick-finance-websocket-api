@@ -1,6 +1,6 @@
 # 错误码说明
 
-[English ](https://en.apis.alltick.co/integration-process/interface-restriction-description/error-code-description)/ 中文
+English / 中文
 
 ***
 

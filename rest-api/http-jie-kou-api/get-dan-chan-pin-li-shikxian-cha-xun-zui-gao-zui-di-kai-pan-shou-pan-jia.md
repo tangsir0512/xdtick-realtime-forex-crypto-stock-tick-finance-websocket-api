@@ -1,6 +1,6 @@
 # GET 单产品历史K线查询（最高、最低、开盘、收盘价）
 
-[English ](https://en.apis.alltick.co/rest-api/stock-http-interface-api/get-k-line-query)/ 中文
+English / 中文
 
 ## GET /kline
 

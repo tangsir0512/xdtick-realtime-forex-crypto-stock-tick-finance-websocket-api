@@ -1,6 +1,6 @@
 # Websocket 行情 API 地址说明
 
-[English ](https://en.apis.alltick.co/integration-process/market-address-description/websocket-quotes-api-address-description)/ 中文
+English / 中文
 
 ## 外汇、加密货币与商品市场数据 WebSocket 订阅
 

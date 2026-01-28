@@ -1,6 +1,6 @@
 # Websocket 请求示例
 
-[English ](https://en.apis.alltick.co/websocket-api/websocket-request-example)/ 中文
+English / 中文
 
 <mark style="color:$danger;">Webscoket通道暂未开放，请勿接通</mark>
 

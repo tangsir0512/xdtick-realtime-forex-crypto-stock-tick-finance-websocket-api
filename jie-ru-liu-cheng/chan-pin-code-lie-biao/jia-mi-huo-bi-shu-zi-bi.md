@@ -1,6 +1,6 @@
 # 加密货币(数字币)
 
-[English ](https://en.apis.alltick.co/integration-process/product-code-list/cryptocurrency-digital-currency)/ 中文
+English / 中文
 
 ### 全部加密货币产品的 code 列表
 

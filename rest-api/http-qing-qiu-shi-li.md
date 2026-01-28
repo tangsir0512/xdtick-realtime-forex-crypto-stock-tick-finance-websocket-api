@@ -1,6 +1,6 @@
 # HTTP 请求示例
 
-[English ](https://en.apis.alltick.co/rest-api/http-request-example)/ 中文
+English / 中文
 
 {% tabs %}
 {% tab title="Go" %}

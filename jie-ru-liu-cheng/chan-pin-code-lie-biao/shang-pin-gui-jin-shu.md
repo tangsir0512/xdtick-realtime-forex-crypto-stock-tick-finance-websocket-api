@@ -1,6 +1,6 @@
 # 商品(贵金属)
 
-[English ](https://en.apis.alltick.co/integration-process/product-code-list/commodity-precious-metals)/ 中文
+English / 中文
 
 ### 贵金属(黄金白银)、原油产品的 code 列表
 

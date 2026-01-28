@@ -1,6 +1,6 @@
 # 最新成交价(实时逐笔Tick数据、当前价、最新价)批量订阅
 
-[English ](https://en.apis.alltick.co/websocket-api/stock-websocket-interface-api/transaction-quote-subscription)/ 中文
+English / 中文
 
 ## 接口说明
 

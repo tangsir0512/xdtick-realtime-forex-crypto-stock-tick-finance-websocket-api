@@ -1,6 +1,6 @@
 # 外汇
 
-[English ](https://en.apis.alltick.co/integration-process/product-code-list/forex)/ 中文
+English / 中文
 
 ### 全部外汇产品的 code 列表
 

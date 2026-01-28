@@ -1,6 +1,6 @@
 # HTTP 接口限制
 
-[English ](https://en.apis.alltick.co/integration-process/interface-restriction-description/http-interface-restrictions)/ 中文
+English / 中文
 
 ## HTTP接口限制
 

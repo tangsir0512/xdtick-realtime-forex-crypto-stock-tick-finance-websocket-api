@@ -1,6 +1,6 @@
 # 欢迎
 
-[English ](https://en.apis.alltick.co/)/ 中文
+English / 中文
 
 ### 欢迎
 
