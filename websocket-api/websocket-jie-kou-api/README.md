@@ -2,10 +2,9 @@
 
 [English](https://en.apis.alltick.co/websocket-api/stock-websocket-interface-api/)
 
-* [ping-pong](https://apis.alltick.co/websocket-api/stock-websocket-interface-api/ping-pong)
-* [handicap-quote-subscription](https://apis.alltick.co/websocket-api/stock-websocket-interface-api/handicap-quote-subscription)
-* [transaction-quote-subscription](https://apis.alltick.co/websocket-api/stock-websocket-interface-api/transaction-quote-subscription)
-* [cancel-quote-subscription](https://apis.alltick.co/websocket-api/stock-websocket-interface-api/cancel-quote-subscription)
+* [最新成交价](zui-xin-cheng-jiao-jia-shi-shi-zhu-bi-tick-shu-ju-dang-qian-jia-zui-xin-jia-pi-liang-ding-yue.md)
+* [心跳](xin-tiao.md)
+* [K线推送](k-xian-tui-song-bu-zhi-chi.md)
 
 {% hint style="info" %}
 官方网站：[https://alltick.co/](https://alltick.co/)

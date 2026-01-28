@@ -2,9 +2,9 @@
 
 [English ](https://en.apis.alltick.co/websocket-api/websocket-request-example)/ 中文
 
-{% content-ref url="/broken/pages/bf76d89cbc39544ecf10171e95af5854b465ea95" %}
-[Broken link](/broken/pages/bf76d89cbc39544ecf10171e95af5854b465ea95)
-{% endcontent-ref %}
+<mark style="color:$danger;">Webscoket通道暂未开放，请勿接通</mark>
+
+
 
 {% tabs %}
 {% tab title="Go" %}

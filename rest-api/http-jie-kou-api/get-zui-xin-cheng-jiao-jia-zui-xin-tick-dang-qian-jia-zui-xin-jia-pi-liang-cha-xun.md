@@ -51,51 +51,42 @@ https://api.xdtick.com/tick-api/trade-tick?codes=BTCUSD,ETHUSD
 {% code title="query 示例" %}
 ```json
 {
-  ": "edd5df80-df7f-4acf-8f67-68fd2f096426",
-  "data": {
-    "symbol_list": [
-      {
-        "code": "857.HK"
-      },
-      {
-        "code": "UNH.US"
-      }
-    ]
-  }
+  "codes": "BTCUSD,ETHUSD"
 }
 ```
 {% endcode %}
 
 参数说明：
 
-| 名称             | 类型        | 必选 | 说明                                                                                                                                                                                                                                              |
-| -------------- | --------- | -- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| trace          | string    | 是  |                                                                                                                                                                                                                                                 |
-| data           | object    | 是  |                                                                                                                                                                                                                                                 |
-| » symbol\_list | \[object] | 是  |                                                                                                                                                                                                                                                 |
-| »» code        | string    | 否  | 代码：[https://docs.google.com/spreadsheets/d/1avkeR1heZSj6gXIkDeBt8X3nv4EzJetw4yFuKjSDYtA/edit?gid=495387863#gid=495387863](https://docs.google.com/spreadsheets/d/1avkeR1heZSj6gXIkDeBt8X3nv4EzJetw4yFuKjSDYtA/edit?gid=495387863#gid=495387863) |
+| 名称    | 类型     | 必选 | 说明                                                           |
+| ----- | ------ | -- | ------------------------------------------------------------ |
+| codes | string | 是  | 产品代码[\[查看\]](../../jie-ru-liu-cheng/chan-pin-code-lie-biao/) |
 
 ## 返回示例
 
 {% code title="返回示例" %}
 ```json
 {
-  "ret": 200,
-  "msg": "ok",
-  "trace": "edd5df80-df7f-4acf-8f67-68fd2f096426",
-  "data": {
-    "tick_list": [
-      {
-        "code": "857.HK",
-        "seq": "30841439",
-        "tick_time": "1677831545217",
-        "price": "136.302",
-        "volume": "0",
-        "turnover": "0",
-        "trade_direction": 0
-      }
-    ]
-  }
+    "msg": "successful",
+    "code": 200,
+    "data": {
+        "tickList": [
+            {
+                "volume": 0.99173000,
+                "code": "BTCUSD",
+                "price": 89262.11000000,
+                "turnover": 88523.9123503000000000,
+                "timestamp": 1769616358
+            },
+            {
+                "volume": 12.13900000,
+                "code": "ETHUSD",
+                "price": 2966.71000000,
+                "turnover": 36012.8926900000000000,
+                "timestamp": 1769616358
+            }
+        ]
+    }
 }
 ```
 {% endcode %}
@@ -110,21 +101,17 @@ https://api.xdtick.com/tick-api/trade-tick?codes=BTCUSD,ETHUSD
 
 返回字段说明：
 
-| 名称                  | 类型        | 必选    | 说明                                                                                                                                                                                        |
-| ------------------- | --------- | ----- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| ret                 | integer   | true  | 返回code                                                                                                                                                                                    |
-| msg                 | string    | true  | 返回code对应消息                                                                                                                                                                                |
-| trace               | string    | true  | 请求的trace                                                                                                                                                                                  |
-| data                | object    | true  |                                                                                                                                                                                           |
-| » tick\_list        | \[object] | true  |                                                                                                                                                                                           |
-| »» code             | string    | false | 代码                                                                                                                                                                                        |
-| »» seq              | string    | false | 序号                                                                                                                                                                                        |
-| »» tick\_time       | string    | false | 时间戳                                                                                                                                                                                       |
-| »» price            | string    | false | 成交价                                                                                                                                                                                       |
-| »» volume           | string    | false | 成交量                                                                                                                                                                                       |
-| »» turnover         | string    | false | <p>成交额：<br>1、外汇、贵金属、能源不返回成交额，可自行根据每次推送的数据计算，计算公式：turnover = price * volume<br>2、股票、加密货币正常返回成交额。</p>                                                                                       |
-| »» trade\_direction | integer   | false | <p>交易方向：<br>1、0为默认值，1为Buy，2为SELL<br>2、外汇、贵金属、能源默认只会返回0<br>3、股票、加密货币根据市场情况会返回0、1、2<br>4、详细说明：<br>0:表示中性盘，即以买一价与卖一价之间的价格撮合成交。<br>1:表示主动买入，即以卖一价或者更高价格成交的股票<br>2:表示主动卖出，即以买一价或者更低价格成交的股票</p> |
+| 名称             | 类型        | 必选    | 说明                                                                                                  |
+| -------------- | --------- | ----- | --------------------------------------------------------------------------------------------------- |
+| msg            | string    | true  | 返回code对应消息                                                                                          |
+| data           | object    | true  |                                                                                                     |
+| » tickList     | \[object] | true  |                                                                                                     |
+| »» code        | string    | false | 代码                                                                                                  |
+| »» timestamp   | string    | false | 时间戳                                                                                                 |
+| »» price       | string    | false | 成交价                                                                                                 |
+| »» volume      | string    | false | 成交量                                                                                                 |
+| »» quoteVolume | string    | false | <p>成交额：<br>1、外汇、贵金属、能源不返回成交额，可自行根据每次推送的数据计算，计算公式：turnover = price * volume<br>2、股票、加密货币正常返回成交额。</p> |
 
 {% hint style="info" %}
-官方网站：[https://alltick.co/](https://alltick.co/)
+官方网站：[https://xdtick.com/](https://xdtick.com/)
 {% endhint %}
