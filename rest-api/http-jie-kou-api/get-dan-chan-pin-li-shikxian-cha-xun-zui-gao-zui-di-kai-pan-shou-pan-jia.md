@@ -52,11 +52,12 @@ https://api.xdtick.com/tick-api/kline?code=BTCUSD\&klineType=1min\&size=2
 
 ## 请求参数
 
-| 名称        | 位置    | 类型     | 必选 | 说明                                                                                   |
-| --------- | ----- | ------ | -- | ------------------------------------------------------------------------------------ |
-| code      | query | string | 否  | 请查看code列表，选择你要查询的code：[\[点击code列表\]](../../jie-ru-liu-cheng/chan-pin-code-lie-biao/) |
-| klineType | query | string | 否  | 1min=1分钟,5min=5分钟，15min=15分钟，30min=30分钟，60min=1小时，1d=1天，1w=1周，1m=1月                  |
-| size      | query | Int    | 否  | 表示查询多少根K线，每次最大请求1000根，可根据时间戳循环往前请求                                                   |
+| 名称        | 位置     | 类型     | 必选 | 说明                                                                                   |
+| --------- | ------ | ------ | -- | ------------------------------------------------------------------------------------ |
+| X-API-KEY | header | string | 是  | 用户token                                                                              |
+| code      | query  | string | 是  | 请查看code列表，选择你要查询的code：[\[点击code列表\]](../../jie-ru-liu-cheng/chan-pin-code-lie-biao/) |
+| klineType | query  | string | 是  | 1min=1分钟,5min=5分钟，15min=15分钟，30min=30分钟，60min=1小时，1d=1天，1w=1周，1m=1月                  |
+| size      | query  | Int    | 否  | 表示查询多少根K线，每次最大请求1000根，可根据时间戳循环往前请求                                                   |
 
 ## query 请求参数 示例
 

@@ -74,7 +74,7 @@ https://api.xdtick.com/tick-api/batch-kline
 
 ## 请求参数说明
 
-<table data-full-width="false"><thead><tr><th width="189.934326171875">名称</th><th width="91.199951171875">位置</th><th width="95">类型</th><th width="46.7999267578125">必选</th><th>说明</th></tr></thead><tbody><tr><td>token</td><td>Header</td><td>string</td><td>是</td><td>如果不知道你的token，请联系相关人员索要</td></tr><tr><td>body</td><td>body</td><td>object</td><td>否</td><td></td></tr><tr><td>» code</td><td>body</td><td>string</td><td>是</td><td>请查看code列表，选择你要查询的code：<a href="../../jie-ru-liu-cheng/chan-pin-code-lie-biao/">[点击code列表]</a></td></tr><tr><td>» klineype</td><td>body</td><td>integer</td><td>是</td><td>k线类型<br>1min=1分钟,5min=5分钟，15min=15分钟，30min=30分钟，60min=1小时，1d=1天，1w=1周，1m=1月</td></tr><tr><td>» size</td><td>body</td><td>integer</td><td>是</td><td>1、表示查询多少根K线，<mark style="color:red;">该接口最大只能查询2根k线</mark></td></tr></tbody></table>
+<table data-full-width="false"><thead><tr><th width="189.934326171875">名称</th><th width="91.199951171875">位置</th><th width="95">类型</th><th width="46.7999267578125">必选</th><th>说明</th></tr></thead><tbody><tr><td>X-API-KEY</td><td>Header</td><td>string</td><td>是</td><td>如果不知道你的token，请联系相关人员索要</td></tr><tr><td>body</td><td>body</td><td>object</td><td>否</td><td></td></tr><tr><td>» code</td><td>body</td><td>string</td><td>是</td><td>请查看code列表，选择你要查询的code：<a href="../../jie-ru-liu-cheng/chan-pin-code-lie-biao/">[点击code列表]</a></td></tr><tr><td>» klineype</td><td>body</td><td>integer</td><td>是</td><td>k线类型<br>1min=1分钟,5min=5分钟，15min=15分钟，30min=30分钟，60min=1小时，1d=1天，1w=1周，1m=1月</td></tr><tr><td>» size</td><td>body</td><td>integer</td><td>是</td><td>1、表示查询多少根K线，<mark style="color:red;">该接口最大只能查询2根k线</mark></td></tr></tbody></table>
 
 ## 返回示例
 

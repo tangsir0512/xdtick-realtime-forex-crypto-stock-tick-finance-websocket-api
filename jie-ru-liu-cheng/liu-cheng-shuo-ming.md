@@ -8,7 +8,7 @@
 **操作**：仔细阅读行情地址说明文档，掌握各接口的访问URL和必要参数。
 
 相关文档：\
-[market-address-description](https://apis.alltick.co/integration-process/market-address-description)
+[行情地址说明](hang-qing-di-zhi-shuo-ming/)
 {% endstep %}
 
 {% step %}
@@ -18,7 +18,7 @@
 **操作**：按照指南申请专属的 Token，以确保您的请求被成功认证。
 
 相关文档：\
-[token-application](https://apis.alltick.co/integration-process/token-application)
+[Token 申请](token-shen-qing.md)
 {% endstep %}
 
 {% step %}
@@ -28,7 +28,7 @@
 **操作**：阅读接口限制说明，注意请求频率、数据请求量等相关限制。
 
 相关文档：\
-[interface-restriction-description](https://apis.alltick.co/integration-process/interface-restriction-description)
+[接口限制说明](jie-kou-xian-zhi-shuo-ming/)
 {% endstep %}
 
 {% step %}
@@ -38,7 +38,7 @@
 **操作**：查看通用标准头文档，了解如何发送和接收 JSON 或其他格式的数据。
 
 相关文档：\
-[universal-standard-header-description](https://apis.alltick.co/integration-process/universal-standard-header-description)
+[通用标准头说明](tong-yong-biao-zhun-tou-shuo-ming/)
 {% endstep %}
 
 {% step %}
@@ -48,7 +48,7 @@
 **操作**：参照 code 列表文档，选定您感兴趣的产品代码。
 
 相关文档：\
-[product-code-list](https://apis.alltick.co/integration-process/product-code-list)
+[产品Code列表](chan-pin-code-lie-biao/)
 {% endstep %}
 
 {% step %}

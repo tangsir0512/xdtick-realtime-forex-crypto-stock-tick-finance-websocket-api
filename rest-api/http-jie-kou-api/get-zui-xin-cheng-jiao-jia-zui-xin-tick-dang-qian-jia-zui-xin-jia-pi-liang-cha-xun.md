@@ -39,10 +39,10 @@ https://api.xdtick.com/tick-api/trade-tick?codes=BTCUSD,ETHUSD
 
 ## 请求参数
 
-| 名称    | 位置     | 类型     | 必选 | 说明   |
-| ----- | ------ | ------ | -- | ---- |
-| token | Header | string | 否  |      |
-| codes | query  | string | 否  | 产品代码 |
+| 名称        | 位置     | 类型     | 必选 | 说明      |
+| --------- | ------ | ------ | -- | ------- |
+| X-API-KEY | Header | string | 否  | 用户token |
+| codes     | query  | string | 否  | 产品代码    |
 
 ## query请求参数
 
