@@ -33,10 +33,3 @@
   * [最新成交价(实时逐笔Tick数据、当前价、最新价)批量订阅](websocket-api/websocket-jie-kou-api/zui-xin-cheng-jiao-jia-shi-shi-zhu-bi-tick-shu-ju-dang-qian-jia-zui-xin-jia-pi-liang-ding-yue.md)
   * [心跳](websocket-api/websocket-jie-kou-api/xin-tiao.md)
   * [K线推送(不支持)](websocket-api/websocket-jie-kou-api/k-xian-tui-song-bu-zhi-chi.md)
-
-## FAQs
-
-* [Page 1](faqs/page-1.md)
-* [基础使用](faqs/ji-chu-shi-yong.md)
-* [数据使用与技术问题](faqs/shu-ju-shi-yong-yu-ji-shu-wen-ti.md)
-* [订阅与账户管理](faqs/ding-yue-yu-zhang-hu-guan-li.md)
