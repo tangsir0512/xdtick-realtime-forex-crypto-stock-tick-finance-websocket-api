@@ -113,5 +113,5 @@ https://api.xdtick.com/tick-api/trade-tick?codes=BTCUSD,ETHUSD
 | »» quoteVolume | string    | false | <p>成交额：<br>1、外汇、贵金属、能源不返回成交额，可自行根据每次推送的数据计算，计算公式：turnover = price * volume<br>2、股票、加密货币正常返回成交额。</p> |
 
 {% hint style="info" %}
-官方网站：[https://xdtick.com/](https://xdtick.com/)
+官方网站：[https://www.xdtick.cc/](https://www.xdtick.cc/)
 {% endhint %}

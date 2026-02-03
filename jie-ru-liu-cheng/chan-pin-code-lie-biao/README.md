@@ -15,7 +15,9 @@ English / 中文
 {% endcontent-ref %}
 
 {% hint style="info" %}
-官方网站：https://xdtick.com/[^1]
+官方网站：https://www.xdtick.cc/[^1]
 {% endhint %}
 
-[^1]: 
+
+
+[^1]: [https://www.xdtick.cc/](https://www.xdtick.cc/)

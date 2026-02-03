@@ -45,5 +45,5 @@ query示例：
 ***
 
 {% hint style="info" %}
-官方网站：[https://xdtick.com/](https://xdtick.com/)
+官方网站：[https://www.xdtick.cc/](https://www.xdtick.cc/)
 {% endhint %}

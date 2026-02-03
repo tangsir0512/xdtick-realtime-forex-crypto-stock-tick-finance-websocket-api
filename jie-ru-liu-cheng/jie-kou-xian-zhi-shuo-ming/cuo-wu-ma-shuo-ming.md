@@ -319,5 +319,5 @@ K 线接口，确认同时请求的【产品数】加上【K 线类型】的总�
 #### XdTick 网站
 
 {% hint style="info" %}
-官方网站：[https://xdtick.com/](https://xdtick.com/)
+官方网站：[https://www.xdtick.cc/](https://www.xdtick.cc/)
 {% endhint %}

@@ -28,5 +28,5 @@ Xdtick 的 WebSocket 接口不支持 K 线数据的推送。无论是历史 K �
 {% endstepper %}
 
 {% hint style="info" %}
-官方网站：[https://xdtick.com/](https://xdtick.com/)
+官方网站：[https://www.xdtick.cc/](https://www.xdtick.cc/)
 {% endhint %}

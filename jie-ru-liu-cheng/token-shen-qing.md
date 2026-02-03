@@ -56,7 +56,7 @@ Token申请地址：[https://xdtick.com/register](https://alltick.co/register)
 {% endstep %}
 {% endstepper %}
 
-![仪表盘截图](<../.gitbook/assets/image (1).png>)
+![仪表盘截图](../.gitbook/assets/微信图片_2026-02-03_172032_513.png)
 
 #### 注意事项
 
@@ -71,5 +71,5 @@ Token申请地址：[https://xdtick.com/register](https://alltick.co/register)
 #### XdTick网站
 
 {% hint style="info" %}
-官方网站：[https://xdtick.com/](https://xdtick.com/)
+官方网站：[https://www.xdtick.cc/](https://www.xdtick.cc/)
 {% endhint %}

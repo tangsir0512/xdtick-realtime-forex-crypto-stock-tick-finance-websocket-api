@@ -7,5 +7,5 @@ English / 中文
 * [GET 最新成交价(最新tick、当前价、最新价)批量查询](https://apis.alltick.co/rest-api/stock-http-interface-api/post-pi-liang-cha-xun-chan-pin-zui-xin-2-genkxian)
 
 {% hint style="info" %}
-官方网站：[https://alltick.co/](https://alltick.co/)
+官方网站：[https://www.xdtick.cc/](https://www.xdtick.cc/)
 {% endhint %}

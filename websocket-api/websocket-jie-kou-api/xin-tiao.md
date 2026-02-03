@@ -32,5 +32,5 @@ English / 中文
 {% endcode %}
 
 {% hint style="info" %}
-官方网站：[https://alltick.com/](https://alltick.com/)
+官方网站：[https://www.xdtick.cc/](https://www.xdtick.cc/)
 {% endhint %}

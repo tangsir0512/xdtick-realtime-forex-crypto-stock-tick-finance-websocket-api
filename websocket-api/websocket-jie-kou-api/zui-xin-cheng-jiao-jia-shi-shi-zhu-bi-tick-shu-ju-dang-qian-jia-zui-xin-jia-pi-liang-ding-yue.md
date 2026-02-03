@@ -140,5 +140,5 @@ wss://api.xdtick.com/tick-ws-api?token=您的token
 {% endcode %}
 
 {% hint style="info" %}
-官方网站：[https://xdtick.com/](https://xdtick.com/)
+官方网站：[https://www.xdtick.cc/](https://www.xdtick.cc/)
 {% endhint %}

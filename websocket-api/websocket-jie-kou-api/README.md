@@ -7,5 +7,5 @@ English
 * [K线推送](k-xian-tui-song-bu-zhi-chi.md)
 
 {% hint style="info" %}
-官方网站：[https://xdtick.com/](https://xdtick.com/)
+官方网站：[https://www.xdtick.cc/](https://www.xdtick.cc/)
 {% endhint %}

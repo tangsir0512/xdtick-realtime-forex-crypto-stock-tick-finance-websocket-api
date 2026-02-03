@@ -89,5 +89,5 @@ English / 中文
 #### XdTick 网站
 
 {% hint style="info" %}
-官方网站：[https://xdtick.com/](https://alltick.co/)
+官方网站：[https://www.xdtick.cc/](https://www.xdtick.cc/)
 {% endhint %}

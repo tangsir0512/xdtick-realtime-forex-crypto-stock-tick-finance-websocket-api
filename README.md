@@ -44,5 +44,5 @@ XdTick（https://xdtick.com/）提供完整的金融市场 Tick 数据解决方�
 ### 官方网站
 
 {% hint style="info" %}
-官方网站：[https://xdtick.com/](https://xdtick.com/)
+官方网站：[https://xdtick.cc/](https://www.xdtick.cc/)
 {% endhint %}
