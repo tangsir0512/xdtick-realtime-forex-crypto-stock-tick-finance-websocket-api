@@ -2,7 +2,7 @@
 
 English / 中文
 
-<mark style="color:$danger;">Webscoket通道暂未开放，请勿接通</mark>
+<mark style="color:$danger;">因调用需求太少，故停止Webscoket通道接入，请勿接通</mark>
 
 
 
