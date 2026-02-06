@@ -26,11 +26,11 @@ English / 中文
 
 {% stepper %}
 {% step %}
-请务必阅读：[Websocket限制说明](https://apis.alltick.co/integration-process/interface-restriction-description/websocket-interface-limitations)
+请务必阅读：[Websocket限制说明](../../jie-ru-liu-cheng/jie-kou-xian-zhi-shuo-ming/websocket-jie-kou-xian-zhi.md)
 {% endstep %}
 
 {% step %}
-请务必阅读：[错误码说明](https://apis.alltick.co/integration-process/interface-restriction-description/error-code-description)
+请务必阅读：[错误码说明](../../jie-ru-liu-cheng/jie-kou-xian-zhi-shuo-ming/cuo-wu-ma-shuo-ming.md)
 {% endstep %}
 {% endstepper %}
 
