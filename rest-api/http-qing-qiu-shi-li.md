@@ -22,7 +22,7 @@ func main() {
 
 func httpKlineExample() {
 	// 接口地址
-	baseURL := "https://api.xdtick.com/tick-api/kline"
+	baseURL := "https://api.xdtick.cc/tick-api/kline"
 
 	// 构造 query 参数
 	params := url.Values{}
@@ -101,7 +101,7 @@ public class KlineHttpExample {
             );
 
             // 完整请求地址
-            String url = "https://api.xdtick.com/tick-api/kline?" + query;
+            String url = "https://api.xdtick.cc/tick-api/kline?" + query;
             System.out.println("请求地址：" + url);
 
             // 创建 HttpClient
@@ -142,7 +142,7 @@ public class KlineHttpExample {
 
 function httpKlineExample() {
     // 接口地址
-    $baseUrl = "https://api.xdtick.com/tick-api/kline";
+    $baseUrl = "https://api.xdtick.cc/tick-api/kline";
 
     // Query 参数
     $params = [
@@ -199,7 +199,7 @@ import requests
 
 def http_kline_example():
     # 接口地址
-    url = "https://api.xdtick.com/tick-api/kline"
+    url = "https://api.xdtick.cc/tick-api/kline"
 
     # Query 参数
     params = {
